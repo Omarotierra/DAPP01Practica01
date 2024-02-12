@@ -15,11 +15,7 @@ public class Logica {
     private Connection conexion;
 
     public Logica() {
-        try {
-            conexion = Conexion.obtenerConexion();
-        } catch (SQLException ex) {
-            ex.printStackTrace();
-        }
+        conexion = Conexion.obtenerConexion();
     }
 
     public void crearEmpleado(Empleado empleado) {
