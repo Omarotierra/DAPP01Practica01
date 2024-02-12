@@ -14,7 +14,7 @@ import java.util.logging.Logger;
  * @author omar
  */
 public class DAPP01Practica01 {
-
+/*
     public static void main(String[] args) {
         Statement st= null;
         Connection con= null;
@@ -40,4 +40,5 @@ public class DAPP01Practica01 {
             }
         }
     }
+*/
 }
