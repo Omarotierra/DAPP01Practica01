@@ -1,17 +1,29 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package org.uv.dapp01practica01;
 
-public class Empleado {
-    private int clave;
-    private String nombre;
-    private String direccion;
-    private String telefono;
+/**
+ *
+ * @author omar
+ */
 
-    public int getClave() {
-        return clave;
+//Plain Old Java Object
+//DTO
+//Maping --- ORM
+public class PojoEmpleado {
+    int id;
+    String nombre;
+    String direccion;
+    String telefono;
+
+    public int getId() {
+        return id;
     }
 
-    public void setClave(int clave) {
-        this.clave = clave;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNombre() {
@@ -37,5 +49,5 @@ public class Empleado {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
-
+    
 }
