@@ -1,5 +1,6 @@
 package org.uv.dapp01practica01;
 
+import Hibernate.PojoEmpleado;
 import java.sql.PreparedStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;

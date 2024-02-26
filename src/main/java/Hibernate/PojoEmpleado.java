@@ -1,12 +1,26 @@
-package org.uv.dapp01practica01;
+package Hibernate;
 
-//Plain Old Java Object
-//DTO
-//Maping --- ORM
-public class PojoEmpleado {
-    int id;
-    String nombre;
-    String direccion;
+import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity(name = "empleados")
+public class PojoEmpleado implements Serializable{
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private int id;
+    
+    @Column(name = "nombre")
+    private String nombre;
+    
+    @Column(name = "direccion")
+    private String direccion;
+    
+    @Column(name = "telefono")
     String telefono;
 
     public int getId() {
