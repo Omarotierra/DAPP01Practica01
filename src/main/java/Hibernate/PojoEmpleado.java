@@ -6,12 +6,18 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 
-@Entity(name = "empleados")
+@Entity(name = "empleadosuv")
 public class PojoEmpleado implements Serializable{
     @Id
     @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE,
+            generator = "empleadosuv_id_seq")
+    @SequenceGenerator(name = "empleadosuv_id_seq", 
+            sequenceName ="empleadosuv_id_seq",
+            initialValue =1,
+            allocationSize= 1)
     private int id;
     
     @Column(name = "nombre")
