@@ -12,7 +12,7 @@ import javax.persistence.SequenceGenerator;
 @Entity(name = "detalleventa")
 public class DetalleVenta implements Serializable{
     @Id
-    @Column(name = "id")
+    @Column(name = "idlinea")
     @GeneratedValue(strategy = GenerationType.SEQUENCE,
             generator = "detalleventa_idlinea_seq")
     @SequenceGenerator(name = "detalleventa_idlinea_seq", 
