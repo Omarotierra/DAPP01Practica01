@@ -68,6 +68,5 @@ public class DetalleVenta implements Serializable{
 
     public void setIdventa(long idventa) {
         this.idventa = idventa;
-    }
-    
+    }   
 }
